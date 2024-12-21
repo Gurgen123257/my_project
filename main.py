@@ -21,4 +21,24 @@ print(K_2)
 print(_name1, end='\n' + _name2)
 '''
 
+# 3.
+
+# Задача: Написать программу, которая принимает число от пользователя и проверяет, является ли оно простым числом.
+
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+# Ввод числа
+number = int(input("Введите число: "))
+
+# Проверка и вывод результата
+if is_prime(number):
+    print(f"{number} — простое число.")
+else:
+    print(f"{number} — составное число.")
 
