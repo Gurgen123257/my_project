@@ -19,5 +19,6 @@ K_2 = _name1 * 4
 print(K_2)
 
 print(_name1, end='\n' + _name2)
-
 '''
+
+
